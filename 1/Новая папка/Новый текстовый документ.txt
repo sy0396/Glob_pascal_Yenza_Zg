@@ -1,0 +1,76 @@
+program laba_8;
+
+type
+   matr = array of integer;
+
+var
+   n: byte;
+   matrix: array of integer;
+   g: text;
+
+
+procedure readfile(f: text; var mt: matr; n: byte);
+var
+   i: byte;
+   fname: string;
+   error: boolean;
+begin
+   repeat 
+      error := false;
+      writeln('Имя файла для чтения');
+      readln(fname);
+      if not FileExists(fname) then 
+      begin
+         write('Файл не найден');
+         error := true;
+      end;
+   until error =  false;
+   setlength(mt, n);
+   assign(f, fname);
+   reset(f);
+   for i := 0 to (n - 1) do
+      read(f, mt[i]);
+   close(f);
+end;
+
+procedure matrix_sorted(var mt: matr; n: byte);
+var
+   j, i: byte;
+   t: integer;
+begin
+   for i := 2 to n do
+   begin
+      t := mt[i];
+      j := i - 1;
+      while (t < mt[i]) and (j > 0) do
+      begin
+         mt[j + 1] := mt[j];
+         j := j - 1;
+      end;
+      mt[j + 1] := t;
+   end;
+end;
+
+procedure output(f: text; mt: matr; n: byte);
+var
+   i: byte;
+   fname: string;
+begin
+   writeln('Имя файла для записи: ');
+   readln(fname);
+   fname := fname + '.txt';
+   assign(f, fname);
+   rewrite(f);
+   for i := 0 to (n - 1) do 
+   begin
+      writeln(mt[i]);
+   end;
+end;
+
+begin
+   writeln('Введите размер массива A: ');
+   readln(n);
+   readfile(g, Matrix, n );
+   matrix_sorted( Matrix, n);
+   output(g, Matrix, n);
+end.

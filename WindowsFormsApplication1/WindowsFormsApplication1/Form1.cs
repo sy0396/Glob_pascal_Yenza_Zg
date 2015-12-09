@@ -171,11 +171,11 @@ namespace WindowsFormsApplication1
                 int size = 0;
                 for (int j=0;j<text.GetLength(1);j++)
                 {
-                    bool ctrl=false;
+                    bool controloflength=false;
                     for (int k=0;k<control.Length;k++)
                         if (text[i,j]==control[k])
-                            ctrl=true;
-                    if (((text [i,j]!=' ')&&(!ctrl))&&(text[i,j]!='\n'))
+                           controloflength = true;
+                    if (((text[i, j] != ' ') && (!controloflength)) && (text[i, j] != '\n'))
                     {
                         if (text[i, j] != '\n')
                             tmp[size++] = text[i, j];
@@ -186,8 +186,8 @@ namespace WindowsFormsApplication1
                             result.Add(new string(tmp));
                         for (int r = 0; r < size; r++)
                             tmp[r] = '\0';
-                            size = 0;                        
-                        if (ctrl)
+                            size = 0;
+                            if (controloflength)
                             result.Add(Convert.ToString(text[i, j]));
                     }
                 }
@@ -207,10 +207,10 @@ namespace WindowsFormsApplication1
            int procCount;
             List < Variable > variables= Spen(parsed,out procCount);
 
-            int colichwatvovizovov = 0; 
+            int countofcall = 0; 
            foreach (Variable variable in variables)
             {
-               colichwatvovizovov = colichwatvovizovov+ variable.count;
+               countofcall = countofcall + variable.count;
                 string s = variable.name;                
                 richTextBox2.AppendText(s);
                 richTextBox2.AppendText(" "+variable.count.ToString());
@@ -218,11 +218,16 @@ namespace WindowsFormsApplication1
                 
             }
            label2.Visible = true;
-           label1.Text = "Количество вызовов: " + colichwatvovizovov.ToString();
+           label1.Text = "Количество вызовов: " + countofcall.ToString();
            label2.Text = "Количество переменных: " + variables.Count.ToString();
            label3.Text = "Количество процедур: " + procCount.ToString();
 
             
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -25,3 +25,12 @@ E:\stuff\учеба ёба\WindowsFormsApplication1\WindowsFormsApplication1\obj
 E:\stuff\учеба ёба\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
 E:\stuff\учеба ёба\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 E:\stuff\учеба ёба\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+E:\fromIntImp\progr\git\Glob_pascal_Yenza_Zg\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+E:\fromIntImp\progr\git\Glob_pascal_Yenza_Zg\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+E:\fromIntImp\progr\git\Glob_pascal_Yenza_Zg\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+E:\fromIntImp\progr\git\Glob_pascal_Yenza_Zg\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+E:\fromIntImp\progr\git\Glob_pascal_Yenza_Zg\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+E:\fromIntImp\progr\git\Glob_pascal_Yenza_Zg\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+E:\fromIntImp\progr\git\Glob_pascal_Yenza_Zg\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+E:\fromIntImp\progr\git\Glob_pascal_Yenza_Zg\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\fromIntImp\progr\git\Glob_pascal_Yenza_Zg\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
